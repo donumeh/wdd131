@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*, html, body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  box-sizing: border-box;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header h1 {
+	width: 100%;
+	padding: 15px;
+	background-color: #1d4d72;
+	color: white;
+	padding: 1rem;
+	text-align: center;
+}
+
+header h1 span {
+	color: #afc73c;
+}
+
+nav {
+	width: 100%;
+	background-color: #333333;
+	margin-bottom: 3rem;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 6.7rem;
+	padding: .5rem;
+}
+
+nav ul li a {
+		color: #b6c3c9;
+		text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #b6c3c950;
+}
+
+main {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+.card {
+	border: 1px solid #1d4d72;
+	border-radius: 10px;
+}
+
+.card_one {
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+}
+
+.card_one h2 {
+	border-radius: 10px 0 0 10px;
+}
+
+.card_two {
+	width: 30%;
+}
+
+.card_two h2 {
+	border-radius: 10px 10px 0 0;
+}
+
+.card_two div {
+	height: 95%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 1.5rem;
+}
+
+.card h2 {
+	background-color: #1d4d72;
+	color: white;
+	padding: .5rem;
+	text-align: center;
+}
+
+.about_me_content {
+	padding: 2rem;
+	line-height: 2rem;
+}
+
+.about_me_content--div {
+	display: flex;
+}
+
+.header_shot {
+	width: 200px;
+	height: 200px;
+}
+
+.country_info {
+	margin-top: 3rem;
+}
+
+.country_info h3 {
+	text-align: center;
+}
+
+.country_info hr {
+	margin-bottom: 1rem;
+	width: 50%;
+	margin-inline: auto;
+}
+
+.flag_image {
+	float: left;
+	margin-right: 1rem;
+}
+
+figcaption {
+	font-style: italic;
+	font-size: .7rem;
+	text-align: center;
+}
