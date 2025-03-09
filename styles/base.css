@@ -124,7 +124,7 @@ main {
 
 .country_info hr {
 	margin-bottom: 1rem;
-	width: 50%;
+	width: 70%;
 	margin-inline: auto;
 }
 
@@ -137,4 +137,57 @@ figcaption {
 	font-style: italic;
 	font-size: .7rem;
 	text-align: center;
+}
+
+.footer {
+  width: 100%;
+  background-color: #1d4d72;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.modification {
+	color: #d5c554;
+}
+
+@media only screen and (max-width: 800px) {
+	nav ul {
+		gap: 2rem;
+	}	
+
+	main {
+		flex-direction: column;
+	}
+
+	.card_one {
+		flex-direction: column;
+	}
+
+	.card_one h2 {
+	border-radius: 10px 10px 0 0;
+}
+	.about_me_content--div {
+		flex-direction: column;
+	}
+
+	.card_one {
+		width: 100%;
+	}
+
+	.header_shot {
+		display: none;
+	}
+
+	#image_message {
+		text-align: center;
+		font-style: italic;
+		font-size: 14px;
+		margin-block: 1rem;
+	}
+
+	.card_two {
+		width: 100%;
+	}
+
 }
