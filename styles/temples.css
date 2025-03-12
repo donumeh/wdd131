@@ -1,0 +1,124 @@
+*, body, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+header {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #1d4d72;
+  color: white;
+}
+
+header,
+main {
+  margin: 0 auto;
+}
+
+main {
+  margin-top: 1rem;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.figures {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  transition: 0.5s;
+  font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+nav a:hover {
+  text-decoration: underline double;
+  background-color: #eee;
+  color: #000;
+}
+
+.active {
+  color: yellow;
+}
+
+#menu {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  background-color: #eee;
+  color: #000;
+}
+
+#menu::before {
+  content: "≡";
+}
+
+nav li {
+    display: none;
+}
+
+.show li {
+  display: block;
+}
+
+#menu.show::before {
+  content: "X";
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+
+img {
+  height: 200px;
+  width: 300px;
+  margin-block: 1rem;
+  border-radius: 15px 150px;
+
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  background-color: #1d4d72;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.modification {
+	color: #d5c554;
+}
