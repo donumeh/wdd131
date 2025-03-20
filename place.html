@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Donald Umeh">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Donald umeh - Country Page">
+    <title>WDD 131 – Dynamic Web Fundamentals (Country Page) - Donald Umeh</title>
+    <link rel="stylesheet" href="./styles/place.css">
+</head>
+<body>
+
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source srcset="./images/nature_animal_large.webp" media="min-width: 1000px">
+            <source srcset="./images/nature_animal_medium.webp" media="min-width: 550px">
+            <img src="./images/nature_animal_small.webp" alt="A picture of a cattle farm" width="400" height="200">
+        </picture>
+
+
+        <section>
+            <h2>Data</h2>
+
+            <p><b>Area:</b> 587,041 sq km</p>
+            <p><b>Population:</b> 27,691,018</p>
+            <p><b>Capital:</b> Antananarivo</p>
+            <p><b>Languages:</b> Malagasy, French</p>
+            <p><b>Currency:</b> Malagasy Ariary</p>
+            <p><b>Time Zone:</b> UTC+3</p>
+            <p><b>Calling Code:</b> +261</p>
+            <p><b>Internet TLD:</b> .mg</p>
+        </section>
+
+
+        <section>
+            <h2>Weather</h2>
+
+            <img src="./images/weather_icon.svg" alt="weather_icon">
+
+            <p><b>Temperature:</b> 10°C</p>
+            <p><b>Conditions:</b> Partly Cloudly</p>
+            <p><b>Wind:</b> 5 km/h</p>
+            <p><b>Wind Chill:</b> 9.8°C</p>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+       <p>&copy; <span id="currentyear"></span>     👨‍💻   Donald E. Umeh   👨‍💻 - Nigeria </p>
+       <p class="modification">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="./scripts/place.js" defer></script>
+</body>
+</html>
