@@ -6,7 +6,8 @@
 
 	/*	Colors */
 	--primary-color: #00834e;
-	--secondary-color: #eee;
+	--footer-primary-color: #172817;
+	--secondary-color: #fff;
 
 	/*	Font Sizes */
 	--font-size-small: 1rem;
@@ -50,10 +51,6 @@ header, footer {
 	background-color: var(--primary-color);
 }
 
-.header sub {
-	font-size: var(--font-size-small);
-}
-
 main {
 	display: grid;
 	margin: auto;
@@ -72,7 +69,7 @@ img {
 	height: 100%;
 }
 
-section {
+section, .section_body {
 	padding: 2rem;
 	display: flex;
 	justify-content: center;
@@ -81,18 +78,15 @@ section {
 	gap: 1rem;
 }
 
-section h2 {
-	margin: 1rem auto;
-}
-
 .svg_weather_icon {
 	width: 100px;
 }
 
 .footer {
   width: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--footer-primary-color);
   color: var(--secondary-color);
+  font-weight: bold;
   text-align: center;
   margin-top: 1rem;
 }

@@ -11,7 +11,7 @@
 
 	.data, .weather {
 		background-color: var(--secondary-color);
-		opacity: .7;
+		opacity: .93;
 	}
 
 	.data {
@@ -26,7 +26,35 @@
 		justify-self: flex-end;
 	}
 
-	h2 {
+	section {
+		position: relative;
+	}
+
+	.section_header {
+		color: var(--secondary-color);
 		background-color: var(--primary-color);
+		width: 100%;
+		text-align: left;
+		position: absolute;
+		top: 0;
+		display: flex;
+		align-items: center;
+		padding: 1rem;
+		border-radius: 1px;
+		border-top-right-radius: 100%;
+		border-bottom-right-radius: 50%;
+		font-weight: 800;
+	}
+
+	.svg_weather_icon {
+		width: 50px;
+	}
+
+	.section_header_one {
+		left: 3rem;
+	}
+
+	.section_header_two {
+		right: 3rem;
 	}
 }
