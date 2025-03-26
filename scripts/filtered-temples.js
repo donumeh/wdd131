@@ -129,7 +129,7 @@ hambutton.addEventListener('click', () => {
   hambutton.classList.toggle('show');
 });
 
-const homeTemples = document.querySelector('#home');
+const homeTemples = document.querySelector('.home');
 const oldTemples = document.querySelector('#old');
 const newTemples = document.querySelector('#new');
 const largeTemples = document.querySelector('#large');
