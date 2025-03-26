@@ -162,7 +162,7 @@ newTemples.addEventListener('click', () => {
 
 largeTemples.addEventListener('click', () => {
   const largeTemplesArray = temples.filter(
-    temple => temple.size > 90000
+    temple => temple.area > 90000
   );
 
   figures.innerHTML = "";
@@ -171,7 +171,7 @@ largeTemples.addEventListener('click', () => {
 
 smallTemples.addEventListener('click', () => {
   const smallTemplesArray = temples.filter(
-    temple => temple.size < 10000
+    temple => temple.area < 10000
   );
 
   figures.innerHTML = "";
