@@ -3,6 +3,7 @@ const hambutton = document.querySelector('#menu');
 const date = new Date();
 const figures = document.querySelector('.figures');
 
+
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -63,7 +64,7 @@ const temples = [
   {
     templeName: "Maputo Mozambique Temple",
     location: "Maputo Mozambique",
-    dedicated: "6 October 2024",
+    dedicated: "2024, October, 6",
     area: 0,
     imageUrl:
       "https://churchofjesuschristtemples.org/assets/img/temples/maputo-mozambique-temple/maputo-mozambique-temple-53836-thumb.jpg"
@@ -71,7 +72,7 @@ const temples = [
   {
     templeName: "Bogotá Colombia Temple",
     location: "Bogotá, Distrito Capital Colombia",
-    dedicated: "24–26 April 1999",
+    dedicated: "1999, April, 26",
     area: 53500,
     imageUrl:
       "https://churchofjesuschristtemples.org/assets/img/temples/bogota-colombia-temple/bogota-colombia-temple-7733-main.jpg"
@@ -79,15 +80,14 @@ const temples = [
   {
     templeName: "Campinas Brazil Temple",
     location: "Campinas–SP Brazil",
-    dedicated: "17 May 2002",
+    dedicated: "2002, May 17",
     area: 48100,
     imageUrl:
       "https://churchofjesuschristtemples.org/assets/img/temples/campinas-brazil-temple/campinas-brazil-temple-6012-main.jpg"
   },
 ];
 
-
-temples.forEach(temple => {
+const populateFigures = (temple) => {
   const figure = document.createElement("figure");
   const img = document.createElement('img');
   const figcaption = document.createElement('figcaption');
@@ -113,7 +113,9 @@ temples.forEach(temple => {
   figure.appendChild(img);
 
   figures.appendChild(figure);
-});
+}
+
+temples.forEach(populateFigures);
 
 document.getElementById("currentyear").
   textContent = date.getFullYear();
@@ -126,3 +128,54 @@ hambutton.addEventListener('click', () => {
   mainnav.classList.toggle('show');
   hambutton.classList.toggle('show');
 });
+
+const homeTemples = document.querySelector('#home');
+const oldTemples = document.querySelector('#old');
+const newTemples = document.querySelector('#new');
+const largeTemples = document.querySelector('#large');
+const smallTemples = document.querySelector('#small');
+
+homeTemples.addEventListener('click', () => {
+  figures.innerHTML = "";
+  temples.forEach(populateFigures);
+});
+
+oldTemples.addEventListener('click', () => {
+  const oldTemplesArray = temples.filter(
+    temple => temple.dedicated.substring(0, 4) < "1900"
+  );
+
+  figures.innerHTML = "";
+
+  oldTemplesArray.forEach(populateFigures);
+});
+
+newTemples.addEventListener('click', () => {
+  const newTemplesArray = temples.filter(
+    temple => temple.dedicated.substring(0, 4) > "2000"
+  );
+
+  figures.innerHTML = "";
+
+  newTemplesArray.forEach(populateFigures);
+});
+
+largeTemples.addEventListener('click', () => {
+  const largeTemplesArray = temples.filter(
+    temple => temple.size > 90000
+  );
+
+  figures.innerHTML = "";
+  largeTemplesArray.forEach(populateFigures);
+});
+
+smallTemples.addEventListener('click', () => {
+  const smallTemplesArray = temples.filter(
+    temple => temple.size < 10000
+  );
+
+  figures.innerHTML = "";
+  smallTemplesArray.forEach(populateFigures);
+});
+
+
