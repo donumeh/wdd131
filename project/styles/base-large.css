@@ -1,0 +1,11 @@
+@media  screen and (min-width: 1000px) {
+    .services {
+        flex-direction: row;
+    }
+
+    .wireframe_images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

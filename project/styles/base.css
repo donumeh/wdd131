@@ -1,0 +1,154 @@
+:root {
+       /* main colors  */
+       --primary-color: #FF0000;
+       --text-parahraph: #333;
+       --accents: #0000FF;
+       --logo-color: var(--primary-color);
+       --secondary-color: #00FF00;
+       --background-color: #eeeeeed4;
+
+       /* Typography */ 
+       --logo-font-family: "Dancing Script", cursive;
+       --headings-font-family: "Bibre Baskerville", serif;
+       --text-font-family: "Roboto", sans-serif;
+}
+
+
+*, html, body {
+    padding: .5rem;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: .8rem;
+    border-bottom: 2px solid #808080;
+    margin-block: 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--headings-font-family);
+    font-size: 3rem;
+}
+
+p {
+    font-family: var(--text-font-family);
+    color: var(--text-parahraph);
+    font-size: 1.4rem;
+}
+
+.header {
+    text-align: center;
+}
+
+.fake-logo {
+    font-family: var(--logo-font-family);
+    color: var(--logo-color);
+    display: inline;
+    font-size: 2rem;
+}
+
+.site-purpose {
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card {
+    background-color: #eeeeeed4;
+    border: 2px solid grey;
+    box-shadow: 10px 2px 10px 1px lightblue;
+}
+
+.card h3 {
+    font-size: 2rem;
+}
+
+figure img {
+    width: 430px;
+    height: 430px;
+}
+
+figcaption {
+    font-family: var(--text-font-family);
+}
+
+.scenarios p {
+    background-color: #ffffff;
+    margin: 1rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: 1px solid gray;
+}
+
+.color-schema p {
+    background-color: #ffffff;
+    margin: 2rem;
+    border-radius: 2rem;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.heading:hover {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+}
+
+.paragraph:hover {
+    background-color: var(--text-parahraph);
+    color: white;
+    font-weight: 600;
+}
+
+.accent:hover {
+    background-color: var(--accents);
+    color: white;
+    font-weight: 600;
+}
+
+.secondary:hover {
+    background-color: var(--secondary-color);
+    color: #333;
+    font-weight: 600;
+}
+
+.background:hover {
+    background-color: var(--background-color);
+    color: #333;
+    font-weight: 600;
+}
+
+.bibre {
+    font-family: var(--headings-font-family);
+}
+
+.roboto {
+    font-family: var(--text-font-family);
+}
+
+.typography {
+    text-align: center;
+}
+
+.wireframe_images {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.wireframe_images  img {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}

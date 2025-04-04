@@ -2,6 +2,11 @@ const mainnav = document.querySelector('nav')
 const hambutton = document.querySelector('#menu');
 const date = new Date();
 const figures = document.querySelector('.figures');
+const homeTemples = document.querySelector('.home');
+const oldTemples = document.querySelector('#old');
+const newTemples = document.querySelector('#new');
+const largeTemples = document.querySelector('#large');
+const smallTemples = document.querySelector('#small');
 
 
 const temples = [
@@ -123,17 +128,10 @@ document.getElementById("currentyear").
 document.getElementById("lastModified").
   textContent = document.lastModified;
 
-
 hambutton.addEventListener('click', () => {
   mainnav.classList.toggle('show');
   hambutton.classList.toggle('show');
 });
-
-const homeTemples = document.querySelector('.home');
-const oldTemples = document.querySelector('#old');
-const newTemples = document.querySelector('#new');
-const largeTemples = document.querySelector('#large');
-const smallTemples = document.querySelector('#small');
 
 homeTemples.addEventListener('click', () => {
   figures.innerHTML = "";
