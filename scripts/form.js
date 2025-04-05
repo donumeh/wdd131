@@ -1,5 +1,4 @@
 // Product name select statement populate
-
 const products = [
     {
         id: "fc-1888",
@@ -32,14 +31,11 @@ products.forEach(product => {
     const select = document.querySelector('#product_name');
     const option = document.createElement('option');
 
-
     option.setAttribute('value', product.name);
     option.textContent = product.name;
 
     select.appendChild(option);
-})
-
-
+});
 
 
 // Footer script
