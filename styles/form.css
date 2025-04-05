@@ -1,0 +1,44 @@
+:root {
+    --background-color: #1d4d72;
+}
+
+*, body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 500px;
+
+}
+
+h1 {
+    background-color: var(--background-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.rating div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: var(--background-color);
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: 0 0 20px 20px;
+}
+
+.modification {
+    color: #f0efef;
+}
